@@ -45,10 +45,16 @@ class GoodsPagination(PageNumberPagination):
 
 from rest_framework import viewsets
 class GoodsListViewset(mixins.ListModelMixin,viewsets.GenericViewSet):
-    queryset = Goods.objects.all()
+    # queryset = Goods.objects.all()
     serializer_class = GoodsSerializer
     pagination_class = GoodsPagination
 
+    def get_queryset(self):
+        queryset = Goods.objects.all()
+        price_min = self.request.query_params.get('price_min',0)  # 获取前端get请求传过来的值
+        if price_min:
+            queryset = queryset.filter(shop_price__gt=int(price_min))
+        return queryset
 
 
 

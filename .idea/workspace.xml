@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a18fcf66-3405-4f48-ac53-1d3e1c7694f3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DRFDemo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DRFDemo/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DRFDemo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DRFDemo/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/goods/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/views.py" afterDir="false" />
     </list>
@@ -20,19 +19,20 @@
     <session id="-1673876977">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.57" value="1" />
+          <entry key="project.open.time.62" value="1" />
           <entry key="project.open.time.75" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="7726" />
+          <entry key="py" value="7981" />
           <entry key="py@DRFDemo" value="142" />
         </counts>
       </usages-collector>
@@ -40,17 +40,17 @@
         <counts>
           <entry key="CommandLine" value="116" />
           <entry key="PLAIN_TEXT" value="26" />
-          <entry key="Python" value="7726" />
+          <entry key="Python" value="7981" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="53" />
+          <entry key="py" value="57" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="53" />
+          <entry key="Python" value="57" />
         </counts>
       </usages-collector>
     </session>
@@ -60,12 +60,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/goods/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="46" column="61" selection-start-line="46" selection-start-column="54" selection-end-line="46" selection-end-column="68" />
+            <state relative-caret-position="230">
+              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
               <folding>
                 <element signature="e#1#41#0" expanded="true" />
-                <marker date="1596465611247" expanded="true" signature="942:1442" ph="..." />
-                <marker date="1596465611247" expanded="true" signature="1165:1277" ph="..." />
               </folding>
             </state>
           </provider>
@@ -74,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://D:/Python/WORKON/DRFDemo/Lib/site-packages/rest_framework/viewsets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="198" column="20" selection-start-line="198" selection-start-column="6" selection-end-line="198" selection-end-column="20" />
+            <state relative-caret-position="47">
+              <caret line="198" column="47" selection-start-line="198" selection-start-column="47" selection-end-line="198" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -83,8 +81,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://D:/Python/WORKON/DRFDemo/Lib/site-packages/rest_framework/generics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="23" column="20" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="20" />
+            <state relative-caret-position="123">
+              <caret line="47" column="20" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/goods/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="50" column="16" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+                <marker date="1595773257905" expanded="true" signature="197:202" ph="..." />
+                <marker date="1595773257905" expanded="true" signature="1055:1060" ph="..." />
+                <marker date="1595773257905" expanded="true" signature="1681:1686" ph="..." />
+                <marker date="1595773257905" expanded="true" signature="3497:3664" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,11 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DRFDemo/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-              <folding>
-                <element signature="e#631#663#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="69">
+              <caret line="22" selection-start-line="22" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -118,7 +129,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DRFDemo/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
+            <state relative-caret-position="311">
               <caret line="137" selection-start-line="137" selection-start-column="2" selection-end-line="140" selection-end-column="3" />
               <folding>
                 <element signature="e#306#315#0" expanded="true" />
@@ -144,6 +155,8 @@
       <find>PAGE</find>
       <find>DEFAULT_PAGINATION_CLASS</find>
       <find>PageNumbe</find>
+      <find>queryset</find>
+      <find>get_queryset</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -161,8 +174,8 @@
         <option value="$PROJECT_DIR$/apps/goods/apps.py" />
         <option value="$PROJECT_DIR$/apps/goods/serializers.py" />
         <option value="$PROJECT_DIR$/DRFDemo/settings.py" />
-        <option value="$PROJECT_DIR$/apps/goods/views.py" />
         <option value="$PROJECT_DIR$/DRFDemo/urls.py" />
+        <option value="$PROJECT_DIR$/apps/goods/views.py" />
       </list>
     </option>
   </component>
@@ -173,8 +186,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="544" />
-    <option name="y" value="38" />
+    <option name="x" value="517" />
+    <option name="y" value="29" />
     <option name="width" value="1384" />
     <option name="height" value="714" />
   </component>
@@ -184,6 +197,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -233,7 +247,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -309,10 +322,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.18910742" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.19213313" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.5433715" />
@@ -322,7 +334,7 @@
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.3277311" />
-      <window_info anchor="bottom" id="Run" order="8" visible="true" weight="0.1309329" />
+      <window_info anchor="bottom" id="Run" order="8" visible="true" weight="0.39443535" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -334,6 +346,30 @@
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.19213313" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.5433715" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="4" weight="0.32569557" />
+      <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.3277311" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.396072" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" weight="0.32996634" />
+      <window_info anchor="bottom" id="manage.py@DRFDemo" order="13" weight="0.2630719" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="SciView" order="2" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -449,10 +485,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/Python/WORKON/DRFDemo/Lib/site-packages/rest_framework/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="50" column="37" lean-forward="true" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/apps/goods/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="43" column="12" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="12" />
+        <state relative-caret-position="168">
+          <caret line="50" column="16" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="16" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
             <marker date="1595773257905" expanded="true" signature="197:202" ph="..." />
@@ -463,10 +506,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Python/WORKON/DRFDemo/Lib/site-packages/rest_framework/settings.py">
+    <entry file="file://D:/Python/WORKON/DRFDemo/Lib/site-packages/rest_framework/viewsets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="50" column="37" lean-forward="true" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
+        <state relative-caret-position="47">
+          <caret line="198" column="47" selection-start-line="198" selection-start-column="47" selection-end-line="198" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python/WORKON/DRFDemo/Lib/site-packages/rest_framework/generics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="47" column="20" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -484,7 +534,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DRFDemo/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
+        <state relative-caret-position="311">
           <caret line="137" selection-start-line="137" selection-start-column="2" selection-end-line="140" selection-end-column="3" />
           <folding>
             <element signature="e#306#315#0" expanded="true" />
@@ -494,36 +544,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DRFDemo/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#631#663#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python/WORKON/DRFDemo/Lib/site-packages/rest_framework/generics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python/WORKON/DRFDemo/Lib/site-packages/rest_framework/viewsets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="198" column="20" selection-start-line="198" selection-start-column="6" selection-end-line="198" selection-end-column="20" />
+        <state relative-caret-position="69">
+          <caret line="22" selection-start-line="22" selection-end-line="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/goods/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="46" column="61" selection-start-line="46" selection-start-column="54" selection-end-line="46" selection-end-column="68" />
+        <state relative-caret-position="230">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
           <folding>
             <element signature="e#1#41#0" expanded="true" />
-            <marker date="1596465611247" expanded="true" signature="942:1442" ph="..." />
-            <marker date="1596465611247" expanded="true" signature="1165:1277" ph="..." />
           </folding>
         </state>
       </provider>
