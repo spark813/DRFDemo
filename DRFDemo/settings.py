@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'trade.apps.TradeConfig',
     'user_operation.apps.UserOperationConfig',
     'rest_framework',
+    'django_filters',
 ]
 
 MIDDLEWARE = [

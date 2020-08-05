@@ -44,17 +44,25 @@ class GoodsPagination(PageNumberPagination):
 
 
 from rest_framework import viewsets
+from django_filters.rest_framework import DjangoFilterBackend
+from .filters import GoodsFilter
+from rest_framework import filters
+
 class GoodsListViewset(mixins.ListModelMixin,viewsets.GenericViewSet):
-    # queryset = Goods.objects.all()
+    queryset = Goods.objects.all()
     serializer_class = GoodsSerializer
     pagination_class = GoodsPagination
+    filter_backends = (DjangoFilterBackend,filters.SearchFilter,filters.OrderingFilter)
+    # filter_fields = ('name',"shop_price")
+    filter_class = GoodsFilter
+    search_fields = ('name','goods_desc')
+    ordering_fields = ('sold_num','add_time')
 
-    def get_queryset(self):
-        queryset = Goods.objects.all()
-        price_min = self.request.query_params.get('price_min',0)  # 获取前端get请求传过来的值
-        if price_min:
-            queryset = queryset.filter(shop_price__gt=int(price_min))
-        return queryset
+
+
+
+
+
 
 
 
