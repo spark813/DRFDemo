@@ -18,12 +18,13 @@ from django.urls import path
 from django.conf.urls import url,include
 from rest_framework.documentation import include_docs_urls
 # from goods.views import GoodsListView
-from goods.views import GoodsListViewset
+from goods.views import GoodsListViewset,GoodsCategoryViewset
 
 from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
-router.register(r'goods',GoodsListViewset,basename='goods')
+router.register(r'goods',GoodsListViewset,basename='goods') # 商品url
+router.register(r'categorys',GoodsCategoryViewset,basename='categorys') # 分类url
 
 
 # goods_list = GoodsListViewset.as_view({

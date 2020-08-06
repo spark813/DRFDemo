@@ -1,5 +1,5 @@
 
-from .serializers import GoodsSerializer
+from .serializers import GoodsSerializer,GoodsCategorySerializer
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -7,7 +7,7 @@ from rest_framework import status
 from rest_framework import mixins,generics
 from rest_framework.pagination import PageNumberPagination
 
-from .models import Goods
+from .models import Goods,GoodsCategory
 
 # class GoodsListView(APIView):
 #     """列表页"""
@@ -58,7 +58,9 @@ class GoodsListViewset(mixins.ListModelMixin,viewsets.GenericViewSet):
     search_fields = ('name','goods_desc')
     ordering_fields = ('sold_num','add_time')
 
-
+class GoodsCategoryViewset(mixins.ListModelMixin,mixins.RetrieveModelMixin,viewsets.GenericViewSet):
+    queryset = GoodsCategory.objects.filter(category_type=1)
+    serializer_class = GoodsCategorySerializer
 
 
 
