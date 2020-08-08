@@ -21,6 +21,7 @@ from rest_framework.documentation import include_docs_urls
 from goods.views import GoodsListViewset,GoodsCategoryViewset
 
 from rest_framework.routers import DefaultRouter
+from rest_framework.authtoken import views
 
 router = DefaultRouter()
 router.register(r'goods',GoodsListViewset,basename='goods') # 商品url
@@ -32,7 +33,6 @@ router.register(r'categorys',GoodsCategoryViewset,basename='categorys') # 分类
 #     # 'post':'create'
 # })
 
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^api-auth/', include('rest_framework.urls')),
@@ -40,4 +40,5 @@ urlpatterns = [
     # url(r'goods/$', GoodsListView.as_view(),name="goods-list"),
     # url(r'goods/$', goods_list,name="goods-list"),
     url(r'^',include(router.urls)),
+    url(r'^api-token-auth/', views.obtain_auth_token),
 ]
