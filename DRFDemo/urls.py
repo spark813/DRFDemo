@@ -20,6 +20,9 @@ from rest_framework.documentation import include_docs_urls
 # from goods.views import GoodsListView
 from goods.views import GoodsListViewset,GoodsCategoryViewset
 from users.views import SmsCodeViewset,UserViewset
+from user_operation.views import UserFavViewset
+from django.views.static import serve
+from django.conf import settings
 
 from rest_framework.routers import DefaultRouter
 from rest_framework.authtoken import views
@@ -30,7 +33,7 @@ router.register(r'goods',GoodsListViewset,basename='goods') # 商品url
 router.register(r'categorys',GoodsCategoryViewset,basename='categorys') # 分类url
 router.register(r'code',SmsCodeViewset,basename='code')
 router.register(r'reg',UserViewset,basename='reg')
-
+router.register(r'userfavs', UserFavViewset, basename="userfavs")
 
 # goods_list = GoodsListViewset.as_view({
 #     'get':'list',
@@ -46,4 +49,5 @@ urlpatterns = [
     url(r'^',include(router.urls)),
     url(r'^api-token-auth/', views.obtain_auth_token),
     url(r'^jwt-auth/', obtain_jwt_token),
+    url(r'^media/(?P<path>.*)$', serve, {"document_root": settings.MEDIA_ROOT}),
 ]

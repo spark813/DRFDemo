@@ -49,7 +49,7 @@ from .filters import GoodsFilter
 from rest_framework import filters
 from rest_framework.authentication import TokenAuthentication
 
-class GoodsListViewset(mixins.ListModelMixin,viewsets.GenericViewSet):
+class GoodsListViewset(mixins.ListModelMixin, mixins.RetrieveModelMixin, viewsets.GenericViewSet):
     queryset = Goods.objects.all()
     serializer_class = GoodsSerializer
     pagination_class = GoodsPagination
