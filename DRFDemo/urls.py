@@ -43,7 +43,7 @@ router.register(r'userfavs', UserFavViewset, basename="userfavs")
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^api-auth/', include('rest_framework.urls')),
-    url(r'docs/', include_docs_urls(title="b")),
+    url(r'docs/', include_docs_urls(title="drf练习")),
     # url(r'goods/$', GoodsListView.as_view(),name="goods-list"),
     # url(r'goods/$', goods_list,name="goods-list"),
     url(r'^',include(router.urls)),
