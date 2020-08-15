@@ -18,7 +18,7 @@ from django.urls import path
 from django.conf.urls import url,include
 from rest_framework.documentation import include_docs_urls
 # from goods.views import GoodsListView
-from goods.views import GoodsListViewset,GoodsCategoryViewset
+from goods.views import GoodsListViewset,GoodsCategoryViewset,IndexCategoryViewset
 from users.views import SmsCodeViewset,UserViewset
 from user_operation.views import UserFavViewset
 from django.views.static import serve
@@ -34,6 +34,9 @@ router.register(r'categorys',GoodsCategoryViewset,basename='categorys') # 分类
 router.register(r'code',SmsCodeViewset,basename='code')
 router.register(r'reg',UserViewset,basename='reg')
 router.register(r'userfavs', UserFavViewset, basename="userfavs")
+
+# 首页商品分类系列数据
+router.register(r'indexgoods', IndexCategoryViewset, basename="indexgoods")
 
 # goods_list = GoodsListViewset.as_view({
 #     'get':'list',

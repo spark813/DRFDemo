@@ -1,5 +1,5 @@
 
-from .serializers import GoodsSerializer,GoodsCategorySerializer
+from .serializers import GoodsSerializer,GoodsCategorySerializer,IndexCategorySerializer
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -48,8 +48,10 @@ from django_filters.rest_framework import DjangoFilterBackend
 from .filters import GoodsFilter
 from rest_framework import filters
 from rest_framework.authentication import TokenAuthentication
+from rest_framework.throttling import UserRateThrottle,AnonRateThrottle
 
 class GoodsListViewset(mixins.ListModelMixin, mixins.RetrieveModelMixin, viewsets.GenericViewSet):
+    throttle_classes = (UserRateThrottle, AnonRateThrottle)
     queryset = Goods.objects.all()
     serializer_class = GoodsSerializer
     pagination_class = GoodsPagination
@@ -60,11 +62,20 @@ class GoodsListViewset(mixins.ListModelMixin, mixins.RetrieveModelMixin, viewset
     search_fields = ('name','goods_desc')
     ordering_fields = ('sold_num','add_time')
 
+    def retrieve(self, request, *args, **kwargs):
+        instance = self.get_object()
+        instance.click_num += 1  # 商品点击数+1
+        instance.save()
+        serializer = self.get_serializer(instance)
+        return Response(serializer.data)
+
 class GoodsCategoryViewset(mixins.ListModelMixin,mixins.RetrieveModelMixin,viewsets.GenericViewSet):
     queryset = GoodsCategory.objects.filter(category_type=1)
     serializer_class = GoodsCategorySerializer
 
-
+class IndexCategoryViewset(mixins.ListModelMixin,viewsets.GenericViewSet):
+    queryset = GoodsCategory.objects.filter(is_tab=True)
+    serializer_class = IndexCategorySerializer
 
 
 

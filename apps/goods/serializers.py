@@ -1,6 +1,7 @@
+from django.db.models import Q
 from rest_framework import serializers
 
-from goods.models import Goods,GoodsCategory,GoodsImage
+from goods.models import Goods,GoodsCategory,GoodsImage,GoodsCategoryBrand
 
 # class GoodsSerializer(serializers.Serializer):
 #     name = serializers.CharField(required=True,max_length=100)
@@ -34,5 +35,24 @@ class GoodsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Goods
         # fields = ('name','click_num','id')  # 取出部分字段
+        fields = "__all__"
+
+class BrandsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = GoodsCategoryBrand
+        fields = "__all__"
+
+class IndexCategorySerializer(serializers.ModelSerializer):
+    brands = BrandsSerializer(many=True)
+    goods = serializers.SerializerMethodField()
+    sub_cat = GoodsCategorySerializer2(many=True)  # 子级分类
+
+    def get_goods(self,obj):
+        all_goods = Goods.objects.filter(Q(category_id=obj.id)|Q(category__parent_category_id=obj.id)|Q(category__parent_category__parent_category_id=obj.id))
+        goods_serializer = GoodsSerializer(all_goods, many=True,context={'request':self.context['request']})
+        return goods_serializer.data
+
+    class Meta:
+        model = GoodsCategory
         fields = "__all__"
 
